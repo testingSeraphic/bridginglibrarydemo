@@ -64,8 +64,9 @@ publishing {
             artifact("$buildDir/outputs/aar/${getArtificatId()}-release.aar")
         }
     }
-    def gitUserName =  githubProperties.getProperty("GPR_USER") ?: System.getenv("GPR_USER")
-    def gitUserPassword =  githubProperties.getProperty("GPR_API_KEY") ?: System.getenv("GPR_API_KEY")
+    //https://github.com/testingSeraphic/bridginglibrarydemo/blob/main/bridginglibrarydemo/build/outputs/aar/bridginglibrarydemo-release.aar
+    def gitUserName =  githubProperties.getProperty("github-username") ?: githubUser
+    def gitUserPassword =  githubProperties.getProperty("github-token") ?: githubToken
     repositories {
         maven {
             url "https://github.com/testingSeraphic/bridginglibrarydemo.git"  // Replace with your actual repository URL
