@@ -23,5 +23,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "BridgingDemo"
-include ':app'
 include ':bridginglibrarydemo'
