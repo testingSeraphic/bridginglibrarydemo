@@ -18,13 +18,6 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven {
-            url "https://maven.pkg.github.com/testingSeraphic/bridginglibrarydemo"
-            credentials {
-                username = githubUser  // Make sure these environment variables are set
-                password = githubToken
-            }
-        }
     }
 }
 rootProject.name = "BridgingDemo"

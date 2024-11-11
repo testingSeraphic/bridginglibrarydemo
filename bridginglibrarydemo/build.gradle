@@ -11,8 +11,8 @@ android {
     defaultConfig {
         minSdk 26
         targetSdk 34
-        versionCode 1
-        versionName "1.1.0"
+        versionCode 2
+        versionName "1.0.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -47,33 +47,40 @@ def githubProperties = new Properties()
 githubProperties.load(new FileInputStream(rootProject.file("local.properties")))
 
 
-def getVersionName = { ->
-    return "1.0.0" // Replace with version Name
-}
-
-def getArtificatId = { ->
-    return "bridginglibrarydemo" // Replace with library name ID
-}
 
 publishing {
     publications {
-        aar(MavenPublication) {
-            groupId 'com.bridginglibrarydemo'
-            artifactId getArtificatId()
-            version getVersionName()
-            artifact("$buildDir/outputs/aar/${getArtificatId()}-release.aar")
+        bar(MavenPublication) {
+            groupId "com"
+            artifactId "bridginglibrarydemo"
+            version "1.0.1"
+            artifact("$buildDir/outputs/aar/bridginglibrarydemo-release.aar")
+        }
+    }
+}
+
+/*
+publishing {
+    publications {
+        bar(MavenPublication) {
+            groupId "com"
+            artifactId "bridginglibrarydemo"
+            version "1.0.0"
+            artifact("$buildDir/outputs/aar/bridginglibrarydemo-release.aar")
         }
     }
     //https://github.com/testingSeraphic/bridginglibrarydemo/blob/main/bridginglibrarydemo/build/outputs/aar/bridginglibrarydemo-release.aar
     def gitUserName =  githubProperties.getProperty("github-username") ?: githubUser
     def gitUserPassword =  githubProperties.getProperty("github-token") ?: githubToken
     repositories {
+
         maven {
-            url "https://github.com/testingSeraphic/bridginglibrarydemo.git"  // Replace with your actual repository URL
+            url uri("https://github.com/testingSeraphic/bridginglibrarydemo.git")  // Replace with your actual repository URL
             credentials {
                 username = gitUserName  // Make sure these environment variables are set
                 password = gitUserPassword
             }
         }
+
     }
-}
+}*/
