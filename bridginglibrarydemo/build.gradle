@@ -62,7 +62,7 @@ publishing {
             groupId 'com.bridginglibrarydemo'
             artifactId getArtificatId()
             version getVersionName()
-            artifact("$buildDir/outputs/${getArtificatId()}-release.aar")
+            artifact("$buildDir/outputs/aar/${getArtificatId()}-release.aar")
         }
     }
     def gitUserName =  githubProperties.getProperty("GPR_USER") ?: System.getenv("GPR_USER")
