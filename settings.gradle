@@ -9,9 +9,7 @@ pluginManagement {
         }
         mavenCentral()
         gradlePluginPortal()
-        maven {
-            url = uri("https://maven.pkg.github.com/testingSeraphic/bridginglibrarydemo")
-        }
+
     }
 }
 dependencyResolutionManagement {
@@ -21,6 +19,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-
 rootProject.name = "BridgingDemo"
 include ':bridginglibrarydemo'

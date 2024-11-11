@@ -1,14 +1,15 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.mavenPublish)
 }
 
 android {
-    namespace 'com.example.bridginglibrarydemo'
+    namespace 'com.bridginglibrarydemo'
     compileSdk 35
 
     defaultConfig {
-        applicationId "com.example.bridginglibrarydemo"
+        applicationId "com.bridginglibrarydemo"
         minSdk 26
         targetSdk 34
         versionCode 1
@@ -40,4 +41,39 @@ dependencies {
     testImplementation libs.junit
     androidTestImplementation libs.androidx.junit
     androidTestImplementation libs.androidx.espresso.core
+}
+
+/**Create github.properties in root project folder file with gpr.usr=GITHUB_USER_ID  & gpr.key=PERSONAL_ACCESS_TOKEN**/
+def githubProperties = new Properties()
+githubProperties.load(new FileInputStream(rootProject.file("local.properties")))
+
+
+def getVersionName = { ->
+    return "1.1.0" // Replace with version Name
+}
+
+def getArtificatId = { ->
+    return "bridginglibrarydemo" // Replace with library name ID
+}
+
+publishing {
+    publications {
+        bar(MavenPublication) {
+            groupId 'com.bridginglibrarydemo'
+            artifactId getArtificatId()
+            version getVersionName()
+            artifact("$buildDir/outputs/${getArtificatId()}-release.aar")
+        }
+    }
+    def gitUserName =  githubProperties.getProperty("GPR_USER") ?: System.getenv("GPR_USER")
+    def gitUserPassword =  githubProperties.getProperty("GPR_API_KEY") ?: System.getenv("GPR_API_KEY")
+    repositories {
+        maven {
+            url "https://github.com/testingSeraphic/bridginglibrarydemo.git"  // Replace with your actual repository URL
+            credentials {
+                username = gitUserName  // Make sure these environment variables are set
+                password = gitUserPassword
+            }
+        }
+    }
 }
