@@ -11,8 +11,8 @@ android {
     defaultConfig {
         minSdk 26
         targetSdk 34
-        versionCode 2
-        versionName "1.0.1"
+        versionCode 1
+        versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -52,8 +52,8 @@ publishing {
     publications {
         bar(MavenPublication) {
             groupId "com"
-            artifactId "bridginglibrarydemo"
-            version "1.0.1"
+            artifactId "com.bridginglibrarydemo"
+            version "1.0"
             artifact("$buildDir/outputs/aar/bridginglibrarydemo-release.aar")
         }
     }
