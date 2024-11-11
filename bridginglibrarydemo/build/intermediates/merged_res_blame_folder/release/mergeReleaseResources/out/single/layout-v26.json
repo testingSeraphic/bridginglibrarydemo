@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.bridginglibrarydemo-release-31:/layout-v26/mtrl_calendar_month.xml",
+        "source": "com.bridginglibrarydemo-material-1.12.0-22:/layout-v26/mtrl_calendar_month.xml"
+    },
+    {
+        "merged": "com.bridginglibrarydemo-release-31:/layout-v26/abc_screen_toolbar.xml",
+        "source": "com.bridginglibrarydemo-appcompat-1.7.0-16:/layout-v26/abc_screen_toolbar.xml"
+    }
+]

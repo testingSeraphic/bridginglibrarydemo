@@ -1,5 +1,5 @@
 [versions]
-agp = "8.7.1"
+agp = "8.7.2"
 kotlin = "1.9.24"
 coreKtx = "1.15.0"
 junit = "4.13.2"
@@ -26,5 +26,5 @@ com-github-testingSeraphic= { group = "com.github.testingSeraphic", name = "brid
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 mavenPublish = { id = "maven-publish" }
-android-library = { id = "com.android.library", version.ref = "agp" }
+android-library = { id = "com.android.library" }
 

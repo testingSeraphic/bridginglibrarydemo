@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.7.2" type="incidents">
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of org.jetbrains.kotlin.android than 1.9.24 is available: 2.0.0">
+        <fix-replace
+            description="Change to 2.0.0"
+            family="Update versions"
+            oldString="1.9.24"
+            replacement="2.0.0"
+            priority="0"/>
+        <location
+            file="$HOME/Documents/DemoAndroidProjects/BridgingDemo/gradle/libs.versions.toml"
+            line="3"
+            column="10"
+            startOffset="34"
+            endLine="3"
+            endColumn="18"
+            endOffset="42"/>
+    </incident>
+
+</incidents>

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.bridginglibrarydemo-release-31:/mipmap-xxhdpi-v4/ic_launcher_round.webp",
+        "source": "com.bridginglibrarydemo-main-32:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.bridginglibrarydemo-release-31:/mipmap-xxhdpi-v4/ic_launcher.webp",
+        "source": "com.bridginglibrarydemo-main-32:/mipmap-xxhdpi/ic_launcher.webp"
+    }
+]

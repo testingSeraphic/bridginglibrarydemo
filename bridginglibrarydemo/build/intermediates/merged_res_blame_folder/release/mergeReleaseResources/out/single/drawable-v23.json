@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "com.bridginglibrarydemo-release-31:/drawable-v23/m3_selection_control_ripple.xml",
+        "source": "com.bridginglibrarydemo-material-1.12.0-22:/drawable-v23/m3_selection_control_ripple.xml"
+    },
+    {
+        "merged": "com.bridginglibrarydemo-release-31:/drawable-v23/abc_control_background_material.xml",
+        "source": "com.bridginglibrarydemo-appcompat-1.7.0-16:/drawable-v23/abc_control_background_material.xml"
+    },
+    {
+        "merged": "com.bridginglibrarydemo-release-31:/drawable-v23/m3_radiobutton_ripple.xml",
+        "source": "com.bridginglibrarydemo-material-1.12.0-22:/drawable-v23/m3_radiobutton_ripple.xml"
+    },
+    {
+        "merged": "com.bridginglibrarydemo-release-31:/drawable-v23/m3_tabs_transparent_background.xml",
+        "source": "com.bridginglibrarydemo-material-1.12.0-22:/drawable-v23/m3_tabs_transparent_background.xml"
+    },
+    {
+        "merged": "com.bridginglibrarydemo-release-31:/drawable-v23/m3_tabs_background.xml",
+        "source": "com.bridginglibrarydemo-material-1.12.0-22:/drawable-v23/m3_tabs_background.xml"
+    },
+    {
+        "merged": "com.bridginglibrarydemo-release-31:/drawable-v23/mtrl_popupmenu_background_overlay.xml",
+        "source": "com.bridginglibrarydemo-material-1.12.0-22:/drawable-v23/mtrl_popupmenu_background_overlay.xml"
+    }
+]

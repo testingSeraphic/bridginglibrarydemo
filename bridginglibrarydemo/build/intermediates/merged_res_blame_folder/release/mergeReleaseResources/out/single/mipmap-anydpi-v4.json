@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.bridginglibrarydemo-release-31:/mipmap-anydpi-v4/ic_launcher_round.xml",
+        "source": "com.bridginglibrarydemo-main-32:/mipmap-anydpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.bridginglibrarydemo-release-31:/mipmap-anydpi-v4/ic_launcher.xml",
+        "source": "com.bridginglibrarydemo-main-32:/mipmap-anydpi/ic_launcher.xml"
+    }
+]
