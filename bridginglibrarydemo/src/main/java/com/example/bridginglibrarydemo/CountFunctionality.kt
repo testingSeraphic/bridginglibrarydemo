@@ -1,6 +1,6 @@
 package com.example.bridginglibrarydemo
 
-public class CountData {
+public class CountFunctionality {
     var count = 0
 
     fun countIncrease():Int{
