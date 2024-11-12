@@ -7,11 +7,11 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.bridginglibrarydemo.Counter
+import com.example.bridginglibrarydemo.CountData
 
 class MainActivity : AppCompatActivity() {
     private var count = 0
-    var counter  = Counter()
+    var countData  = CountData()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         val btnCount = findViewById<Button>(R.id.btnCount)
         tvCount.text = "$count"
         btnCount.setOnClickListener{
-            count = counter.countIncrease()
+            count = countData.countIncrease()
             tvCount.text = "$count"
         }
     }
