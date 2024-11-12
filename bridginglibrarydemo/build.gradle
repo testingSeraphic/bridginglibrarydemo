@@ -30,6 +30,8 @@ android {
     kotlinOptions {
         jvmTarget = '17'
     }
+
+
 }
 
 dependencies {
@@ -53,12 +55,18 @@ publishing {
         bar(MavenPublication) {
             groupId "bridginglibrarydemo"
             artifactId "com.bridginglibrarydemo"
-            version "1.4"
+            version "1.5"
             artifact("$buildDir/outputs/aar/bridginglibrarydemo-release.aar")
         }
     }
 }
+tasks.named("publishBarPublicationToMavenLocal") {
+    dependsOn tasks.named("bundleReleaseAar")
+}
 
+tasks.named("publishBarPublicationToMavenLocal") {
+    mustRunAfter tasks.named("bundleReleaseAar")
+}
 /*
 publishing {
     publications {
