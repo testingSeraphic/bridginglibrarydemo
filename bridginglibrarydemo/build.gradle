@@ -55,7 +55,7 @@ publishing {
         bar(MavenPublication) {
             groupId "bridginglibrarydemo"
             artifactId "com.bridginglibrarydemo"
-            version "1.0.2"
+            version "1.0.3"
             artifact("$buildDir/outputs/aar/bridginglibrarydemo-release.aar")
         }
     }
@@ -64,9 +64,9 @@ tasks.named("publishBarPublicationToMavenLocal") {
     dependsOn tasks.named("bundleReleaseAar")
 }
 
-tasks.named("publishBarPublicationToMavenLocal") {
+/*tasks.named("publishBarPublicationToMavenLocal") {
     mustRunAfter tasks.named("bundleReleaseAar")
-}
+}*/
 /*
 publishing {
     publications {
